@@ -1,22 +1,4 @@
-# Webpack start
+# Proyecto TO DO list
 
-Este es el proyecto inicial para crear apps utilizando webpack.
+Este es el proyecto inicial to do app con webpack.
 
-### Notas:
-
-Recuerda reconstruir los modulos de Node
-```
-npm install
-```
-
-y para reconstruir el dist :
-
-```
-npm run build
-```
-
-comando para la version de desarrollo:
-
-```
-npm run build:dev
-```

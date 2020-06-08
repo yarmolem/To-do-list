@@ -12,14 +12,20 @@ module.exports = {
         rules: [
             {
                 test:/\.css$/,
-                exclude:/style\.css$/,
+                exclude:/styles\.css$/,
                 use:[
                     'style-loader',
                     'css-loader',
                 ]
             },
             {
-                test:/style\.css$/,
+                test: /\.js$/,
+                enforce: 'pre',
+                exclude: /(ngfactory|ngstyle).js$/,
+                use: 'source-map-loader'
+            },
+            {
+                test:/styles\.css$/,
                 use:[
                     miniCssExtractPlugin.loader,
                     'css-loader',
